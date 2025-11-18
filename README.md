@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ Características
+Gestión de Casos: Crear, editar y eliminar casos legales
 
-## Getting Started
+Dashboard Interactivo: Vista general con métricas y casos recientes
 
-First, run the development server:
+Interfaz Responsive: Diseño adaptable a dispositivos móviles y desktop
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Modo Oscuro: Tema oscuro para mejor experiencia visual
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Búsqueda y Filtros: Encontrar casos rápidamente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Estados de Casos: Seguimiento del progreso de cada caso
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+--------------------------------------------------------------
 
-## Learn More
+Tecnologías Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+Frontend: Next.js 14, React 18, TypeScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Estilos: Tailwind CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Iconos: Lucide React
 
-## Deploy on Vercel
+Despliegue: Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Control de Versiones: Git & GitHub
+--------------------------------------------------------------------
+ESTRUCTURA DEL PROYECTO
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+legal-tech/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── Dashboard.tsx
+│   │   ├── CaseForm.tsx
+│   │   ├── CaseList.tsx
+│   │   ├── RecentCases.tsx
+│   │   └── StatsCard.tsx
+│   └── types/
+│       └── index.ts
+├── public/
+├── package.json
+├── next.config.js
+└── tailwind.config.js
+
+
+---------------------------------------------------------------
+
+
+
+LINK DEL FRONTEND DESPLEGADO
+
+https://gestion-casos.vercel.app/login
+
+--------------------------------------------------------------
+
+Dashboard
+-Métricas generales de casos
+-Casos recientes
+-Gráficos de distribución
+
+CaseForm
+-Formulario para crear/editar casos
+-Validación de datos
+-Estados de envío
+
+CaseList
+-Lista completa de casos
+-Búsqueda y filtrado
+-Acciones rápidas
+
+RecentCases
+-Vista de casos recientes
+-Acciones rápidas (editar/eliminar)
+
+
+---------------------------------------------------------------------
+
+
+LINK DE REPOSITORIO 
+
+
+https://github.com/Alcardro/GestionDeCasos
+
