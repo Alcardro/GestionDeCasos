@@ -11,7 +11,7 @@ interface RecentCasesProps {
 export default function RecentCases({ cases, onDeleteCase, onEditCase }: RecentCasesProps) {
   // Ordenar casos por fecha de creación (más recientes primero)
   const recentCases = [...cases]
-    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+  .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
     .slice(0, 5); // Solo mostrar 5 más recientes
 
   const getStatusColor = (estado: string) => {
@@ -81,10 +81,10 @@ export default function RecentCases({ cases, onDeleteCase, onEditCase }: RecentC
                   </p>
                   <div className="flex items-center gap-4 mt-2">
                     <span className="text-xs text-gray-400">
-                      📅 Creado: {formatDate(caseItem.createdAt)}
+                      📅 Creado: {formatDate(caseItem.created_at)}
                     </span>
                     <span className="text-xs text-gray-400">
-                      ✏️ Actualizado: {formatDate(caseItem.updatedAt)}
+                      ✏️ Actualizado: {formatDate(caseItem.updated_at)}
                     </span>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default function RecentCases({ cases, onDeleteCase, onEditCase }: RecentC
                     ✏️
                   </button>
                   <button 
-                    onClick={() => onDeleteCase(caseItem.id, caseItem.nombre)}
+                    onClick={() => onDeleteCase(caseItem.id.toString(), caseItem.nombre)}
                     className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                     title="Eliminar caso"
                   >

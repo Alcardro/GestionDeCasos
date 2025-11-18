@@ -15,7 +15,7 @@ export default function StatsCards({ cases }: StatsCardsProps) {
   
   // Calcular casos vencidos (más de 30 días)
   const overdueCases = cases.filter(c => {
-    const created = new Date(c.createdAt);
+    const created = new Date(c.created_at);
     const now = new Date();
     const diffDays = Math.floor((now.getTime() - created.getTime()) / (1000 * 60 * 60 * 24));
     return diffDays > 30 && c.estado !== 'COMPLETADO';
