@@ -85,3 +85,12 @@ LINK DE REPOSITORIO
 
 https://github.com/Alcardro/GestionDeCasos
 
+---------------------------------------------------------------------
+
+Para pruebas en Local donde el proyecto funciona de manera completa:
+
+1. Ejecutra "npm run dev" desde la carpeta principal para ejecutar el fronted
+2. Para ejecutar el backend, abrir otra terminal y colocarse en la carpeta backend y ejecutar "npm run dev"
+3. Finalmente accediento a las rutas de fronted se puede seguir y ver todo la aplicación.
+
+   Nota: el usuario y contraseña se encuentran en la pantalla del login en la parte inferior
