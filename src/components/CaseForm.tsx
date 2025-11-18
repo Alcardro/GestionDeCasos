@@ -88,7 +88,7 @@ export default function CaseForm({ onSave, onCancel, initialData, isEditing = fa
     
     try {
       if (isEditing && initialData) {
-        await onSave(formData, initialData.id);
+        await onSave(formData, initialData.id.toString());
       } else {
         await onSave(formData);
       }
