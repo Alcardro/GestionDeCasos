@@ -238,8 +238,8 @@ export default function LoginPage() {
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
               <h3 className="text-sm font-medium text-blue-800 mb-2">Credenciales de prueba:</h3>
               <div className="text-xs text-blue-600 space-y-1">
-                <p><strong>Usuario:</strong> abogado</p>
-                <p><strong>Contraseña:</strong> password123</p>
+                <p><strong>Usuario:</strong> abogado1</p>
+                <p><strong>Contraseña:</strong> 123</p>
               </div>
             </div>
           </div>
