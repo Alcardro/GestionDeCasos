@@ -1,5 +1,5 @@
 // src/lib/api.ts
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://gestiondecasosbackend-production.up.railway.app/api';
 
 // Interfaces para la API
 export interface LoginRequest {
