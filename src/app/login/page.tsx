@@ -32,14 +32,14 @@ class AuthService {
     const mockUsers = [
       {
         id: '1',
-        username: 'abogado',
-        password: 'password123',
+        username: 'abogado1',
+        password: '123',
         email: 'abogado@example.com'
       },
       {
         id: '2', 
-        username: 'asistente',
-        password: 'password123',
+        username: 'abogado2',
+        password: '123',
         email: 'asistente@example.com'
       }
     ];
