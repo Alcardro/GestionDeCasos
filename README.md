@@ -24,28 +24,6 @@ Iconos: Lucide React
 Despliegue: Vercel
 
 Control de Versiones: Git & GitHub
---------------------------------------------------------------------
-ESTRUCTURA DEL PROYECTO
-
-legal-tech/
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx
-│   │   ├── page.tsx
-│   │   └── globals.css
-│   ├── components/
-│   │   ├── Dashboard.tsx
-│   │   ├── CaseForm.tsx
-│   │   ├── CaseList.tsx
-│   │   ├── RecentCases.tsx
-│   │   └── StatsCard.tsx
-│   └── types/
-│       └── index.ts
-├── public/
-├── package.json
-├── next.config.js
-└── tailwind.config.js
-
 
 ---------------------------------------------------------------
 
